@@ -1,0 +1,77 @@
+.dashboard-container {
+  background-size: cover;
+  background-position: center;
+  background-color: #fefefe;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, rgba(255,255,255,0.6), rgba(255,255,255,0.3));
+  z-index: 0;
+}
+
+.dashboard-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 420px;
+  margin: auto;
+}
+
+.restaurant-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.restaurant-card:hover {
+  transform: scale(1.02);
+}
+
+.restaurant-card h3 {
+  margin-top: 0;
+  color: #2d3748;
+  font-size: 26px;
+}
+
+.restaurant-card p {
+  margin: 10px 0;
+  color: #4a5568;
+  font-size: 16px;
+}
+
+.restaurant-card button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #48bb78, #38a169);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-card button:hover {
+  background: linear-gradient(135deg, #2f855a, #276749);
+  transform: translateY(-2px);
+}
+
+.empty-message {
+  color: #2d3748;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+}

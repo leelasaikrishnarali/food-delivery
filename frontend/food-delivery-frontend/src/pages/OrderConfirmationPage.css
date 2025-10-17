@@ -1,0 +1,66 @@
+.confirmation-container {
+  background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+}
+
+.confirmation-overlay {
+  background: linear-gradient(to bottom right, rgba(255,255,255,0.6), rgba(255,255,255,0.3));
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.confirmation-box {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.confirmation-box h2 {
+  color: #28a745;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.confirmation-box p {
+  font-size: 16px;
+  color: #4a5568;
+  margin-bottom: 30px;
+}
+
+.confirmation-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.confirmation-actions button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation-actions button:hover {
+  background-color: #0056b3;
+}
